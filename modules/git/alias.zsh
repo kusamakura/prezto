@@ -71,6 +71,9 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias gcl='git-commit-lost'
   alias gcy='git cherry --verbose --abbrev'
   alias gcY='git cherry --verbose'
+  gck() {
+    git checkout -b "feature/kusamakura/$1";
+  } 
 
   # Conflict (C)
   alias gCl='git --no-pager diff --name-only --diff-filter=U'
